@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Properties</string>
+    <string name="text_detail">Add your property, property details, rent due and rent payment date and get notified when its due.</string>
+</resources>

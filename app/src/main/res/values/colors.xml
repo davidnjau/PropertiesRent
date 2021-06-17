@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#443030</color>
+    <color name="purple_500">#443030</color>
+    <color name="purple_700">#301F1F</color>
+
+    <color name="teal_200">#443030</color>
+    <color name="teal_700">#443030</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#443030</color>
+    <color name="colorPrimaryDark">#301F1F</color>
+
+    <color name="pas_due">#650505</color>
+    <color name="before_due">#15AA1B</color>
+
+
+</resources>

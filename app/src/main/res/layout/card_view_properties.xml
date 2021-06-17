@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/back_outline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/tvPropertyName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Property Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_action_property_name" />
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/tvLocation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_action_location" />
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/tvRentDue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Rent Due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_action_rent" />
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/label_past_due"
+                android:textColor="@color/white"
+                android:id="@+id/tvDatePast"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Date Due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_action_date" />
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/label_before_due"
+                android:textColor="@color/white"
+                android:id="@+id/tvDateDue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Date Due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_action_date" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnEditDetails"
+                android:background="@mipmap/ic_launcher_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

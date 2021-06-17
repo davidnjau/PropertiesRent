@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_marginBottom="30dp"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Add Property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Please add the property details "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/cool_edit_text"
+                    android:id="@+id/etPropertyName"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/ic_action_property_name"
+                    android:hint="Property Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/etPropertyLocation"
+                    android:inputType="textPostalAddress"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/cool_edit_text"
+                    android:drawableStart="@drawable/ic_action_location"
+                    android:hint="Location of Property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/etRentAmount"
+                    android:inputType="number"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/cool_edit_text"
+                    android:drawableStart="@drawable/ic_action_rent"
+                    android:hint="Rent Amount (Kshs)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/etMoreDetails"
+                    android:inputType="textLongMessage"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="100dp"
+                    android:background="@drawable/cool_edit_text"
+                    android:drawableStart="@drawable/ic_action_info"
+                    android:hint="More Details.."
+                    android:singleLine="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/datePicker"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_action_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:paddingEnd="10dp"
+                            android:layout_width="match_parent"
+                            android:text="Select Date"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/tvDate"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/imageLayout"
+                        android:gravity="center"
+                        android:background="@drawable/border_line"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/ic_action_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:paddingEnd="10dp"
+                            android:layout_width="match_parent"
+                            android:text="Select Image"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvImageName"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginEnd="5dp"
+            android:id="@+id/btnSaveProperty"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_save_background"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="Save My Properties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnViewMyProperties"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:text="View My Properties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

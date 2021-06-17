@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:drawableStart="@drawable/ic_action_email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/cool_edit_text"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:id="@+id/etEmailAddress"
+            android:hint=" Email address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:drawableStart="@drawable/ic_action_password"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/cool_edit_text"
+            android:id="@+id/etPassword"
+            android:hint=" Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_save_background"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:id="@+id/btnSignUp"
+        android:text="Check Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
