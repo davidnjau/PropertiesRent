@@ -64,8 +64,9 @@ class MyPropertiesAdapter(
 
         val property_name = propertDataList[position]?.property_name
         val property_location = propertDataList[position]?.property_location
-        val property_rent = "${propertDataList[position]?.property_rent} Kshs"
         val rent_due_at = propertDataList[position]?.rent_due_at
+        val property_rent = "${propertDataList[position]?.property_rent} Kshs"
+
 
         val remainingDays = Formatter().getDateDiff(rent_due_at.toString())
         val isExpired = remainingDays.isExpired
@@ -89,15 +90,13 @@ class MyPropertiesAdapter(
         }else{
             holder.tvDatePast.visibility = View.VISIBLE
             holder.tvDateDue.visibility = View.GONE
-            pastDue.toString()
+            pastDue
         }
-
 
 
         holder.tvPropertyName.text = property_name
         holder.tvLocation.text = property_location
         holder.tvRentDue.text = property_rent
-
         holder.tvDateDue.text = dueDate
         holder.tvDatePast.text = dueDate
 

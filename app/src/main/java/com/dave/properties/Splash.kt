@@ -51,9 +51,9 @@ class Splash : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        mWorkManager = WorkManager.getInstance()
-        val mRequest = OneTimeWorkRequest.Builder(DatesWorkerClass::class.java).build()
-        mWorkManager.enqueue(mRequest)
+//        mWorkManager = WorkManager.getInstance()
+//        val mRequest = OneTimeWorkRequest.Builder(DatesWorkerClass::class.java).build()
+//        mWorkManager.enqueue(mRequest)
 
 
     }

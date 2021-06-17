@@ -114,7 +114,7 @@ class Formatter {
                         if (isExpired == true){
 
                             propertyName = propertyData?.property_name.toString()
-                            propertyAmount =  "${propertyData?.property_rent} Khs"
+//                            propertyAmount =  "${propertyData?.property_rent} Khs"
 
                             if (isExpired == true){
                                 dueDate = if (remDays < 1){
