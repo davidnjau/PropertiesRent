@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".PropertyDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="Property Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/tvPropertyName"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Label 1: Value 1"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Property name" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/tvPropertyLocation"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Label 1: Value 1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Property location" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/tvPropertyDueDate"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Label 1: Value 1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Property rent due date" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/tvPropertyRentAmount"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Label 1: Value 1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Property rent due date" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/tvMoreDetails"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Label 1: Value 1"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Property More Details"
+                                 />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    tools:listitem="@layout/card_view_rent_duration1"
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/recyclerViewRent1"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="15dp"
+                            android:background="@color/gray"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:text="Property Rents"
+                                 />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

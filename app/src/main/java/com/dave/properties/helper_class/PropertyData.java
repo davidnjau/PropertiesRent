@@ -11,8 +11,18 @@ public class PropertyData {
     private String rent_due_at;
     private String property_details;
     private String property_rent;
+    private String key;
 
     public PropertyData() {
+    }
+
+    public PropertyData(String property_name, String property_location, String rent_due_at, String property_details, String property_rent, String key) {
+        this.property_name = property_name;
+        this.property_location = property_location;
+        this.rent_due_at = rent_due_at;
+        this.property_details = property_details;
+        this.property_rent = property_rent;
+        this.key = key;
     }
 
     public String getProperty_name() {
@@ -53,5 +63,13 @@ public class PropertyData {
 
     public void setProperty_rent(String property_rent) {
         this.property_rent = property_rent;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

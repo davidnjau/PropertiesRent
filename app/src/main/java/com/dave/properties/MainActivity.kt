@@ -170,6 +170,7 @@ class MainActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListener,
                 newPost.child("property_details").setValue(propertyMoreDetails)
                 newPost.child("rent_due_at").setValue(myDate.toString())
                 newPost.child("property_rent").setValue(totalAmount.toString())
+                newPost.child("key").setValue(pushKey)
 
                 Toast.makeText(this, "Property has been added successfully.", Toast.LENGTH_SHORT).show()
 
