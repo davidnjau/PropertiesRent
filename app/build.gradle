@@ -65,4 +65,16 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
     kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
+
+    //Network
+    implementation 'com.squareup.retrofit2:retrofit:2.6.3'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.3'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'io.reactivex:rxandroid:1.0.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.android.volley:volley:1.2.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.3'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.6.0'
+
 }
